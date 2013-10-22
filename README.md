@@ -1,4 +1,4 @@
-# //FLC - Coworking for Software People
+# /dev/local - Coworking for Software People
 
 **Opening December 1st in the heart of Fremont**
 
