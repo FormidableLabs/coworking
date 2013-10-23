@@ -801,7 +801,9 @@ body {
   left: 0;
   z-index: -1;
 
-  background-image: -webkit-linear-gradient(left, #1d4d81 50%, transparent);
+  background-image: -webkit-linear-gradient(to right, #1d4d81 50%, rgba(29,77,129,0));
+  background-image: -moz-linear-gradient(to right, #1d4d81 50%, rgba(29,77,129,0));
+  background-image: linear-gradient(to right, #1d4d81 50%, rgba(29,77,129,0));
 }
 
 .logo-slash:first-child {
