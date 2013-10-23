@@ -706,6 +706,40 @@ textarea {
 }
 
 /* ==========================================================================
+   Animations
+   ========================================================================== */
+
+@-webkit-keyframes reveal-dev {
+  0% { text-indent: -168px; }
+  100% { text-indent: 0; }
+}
+
+@keyframes reveal-dev {
+  0% { text-indent: -168px; }
+  100% { text-indent: 0; }
+}
+
+@-webkit-keyframes reveal-local {
+  0% { text-indent: -212px; }
+  100% { text-indent: 0; }
+}
+
+@keyframes reveal-local {
+  0% { text-indent: -212px; }
+  100% { text-indent: 0; }
+}
+
+@-webkit-keyframes fade-out {
+  0% { width: 150px; }
+  100% { width: 0; }
+}
+
+@keyframes fade-out {
+  0% { width: 150px; }
+  100% { width: 0; }
+}
+
+/* ==========================================================================
    Base
    ========================================================================== */
 
@@ -732,17 +766,53 @@ body {
    Content
    ========================================================================== */
 
-.logo {
-  width: 103px;
-  height: 149px;
-  margin: 0 auto 40px;
-
-  background-image: url("../img/slashes.svg");
-  background-repeat: no-repeat;
+.github-banner {
+  display: none;
 }
 
-.no-svg .logo {
-  background-image: url("../img/slashes.png");
+.logo {
+  margin: 0 auto;
+
+  font-family: Verlag A, Verlag B, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 0;
+  font-weight: 400;
+}
+
+.logo span {
+  display: inline-block;
+
+  font-size: 60px;
+  vertical-align: middle;
+}
+
+.logo-slash {
+  position: relative;
+  top: -10px;
+  z-index: 1;
+
+  margin-right: 6px;
+}
+
+.logo-slash:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+
+  background-image: -webkit-linear-gradient(left, #1d4d81 50%, transparent);
+}
+
+.logo-slash:first-child {
+  margin-right: 0;
+}
+
+.logo-text {
+  overflow: hidden;
+
+  margin-left: -30px;
+  padding-left: 30px;
 }
 
 .primary {
@@ -852,6 +922,10 @@ body {
 }
 
 @media only screen and (min-width: 40em) {
+  .github-banner {
+    display: block;
+  }
+
   .primary {
     font-size: 32px;
   }
@@ -860,8 +934,27 @@ body {
     font-size: 24px;
   }
 
-  .logo {
-    margin: 0 auto;
+  .logo span {
+    font-size: 120px;
+  }
+
+  .logo-slash:after {
+    width: 150px;
+
+    -webkit-animation: fade-out linear forwards 1.5s 1s;
+    animation: fade-out linear forwards 1.5s 1s;
+  }
+
+  .logo-text-dev {
+    text-indent: -168px;
+    -webkit-animation: reveal-dev ease forwards 1.5s 1s;
+    animation: reveal-dev ease forwards 1.5s 1s;
+  }
+
+  .logo-text-local {
+    text-indent: -212px;
+    -webkit-animation: reveal-local ease forwards 1.5s 1s;
+    animation: reveal-local ease forwards 1.5s 1s;
   }
 }
 
