@@ -958,6 +958,15 @@ body {
     -webkit-animation: reveal-local ease forwards 1.5s 1s;
     animation: reveal-local ease forwards 1.5s 1s;
   }
+
+  .no-cssanimations .logo-slash:after {
+    width: 0;
+  }
+
+  .no-cssanimations .logo-text-dev,
+  .no-cssanimations .logo-text-local {
+    text-indent: 0;
+  }
 }
 
 /* ==========================================================================
