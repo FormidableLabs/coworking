@@ -908,7 +908,7 @@ h3 {
   float: left;
   width: 50%;
   margin-left: 50%;
-  padding: 40px 0 40px 60px;
+  padding: 40px 0 40px 66px;
 }
 
 .primary-content:before {
@@ -1026,6 +1026,10 @@ h3 {
   display: none;
 }
 
+.plan {
+  padding-bottom: 78px;
+}
+
 .plan ul {
   padding-left: 18px;
 
@@ -1041,6 +1045,11 @@ h3 {
 }
 
 .plan-price {
+  position: absolute;
+  bottom: 70px;
+
+  margin: 0;
+
   font-size: 16px;
   font-style: italic;
 }
@@ -1048,6 +1057,28 @@ h3 {
 .plan-price span {
   font-size: 36px;
   font-style: normal;
+}
+
+.plan-price s {
+  position: relative;
+
+  color: #aaa;
+  font-size: 24px;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+.plan-price s:before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  right: -3px;
+  left: -5px;
+  z-index: 200;
+
+  border-top: 1px solid #aaa;
+  
+  -webkit-transform: rotate(-6deg);
 }
 
 .about-map {
