@@ -1106,6 +1106,19 @@ h3 {
   padding-left: 50px;
 }
 
+.supporters {
+  margin: 32px 0 0 -50px;
+  padding: 0;
+
+  list-style: none;
+}
+
+.supporters li {
+  display: inline-block;
+  margin-bottom: 24px;
+  padding-left: 50px;
+}
+
 .btn-mini-col {
   width: 100%;
   padding-left: 50px;
