@@ -861,7 +861,6 @@ h3 {
 
   background: #1d4d81;
   -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.3);
-  -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.3);
   box-shadow: 0 1px 3px rgba(0,0,0,0.3);
   color: #fff;
   font-size: 18px;
@@ -924,7 +923,6 @@ h3 {
 
   background: #fff;
   -webkit-box-shadow: -5px 0 8px -5px rgba(0,0,0,0.3);
-  -moz-box-shadow: -5px 0 8px -5px rgba(0,0,0,0.3);
   box-shadow: -5px 0 8px -5px rgba(0,0,0,0.3);
   -webkit-transform: rotate(14deg);
   -ms-transform: rotate(14deg);
@@ -985,9 +983,10 @@ h3 {
   border-radius: 4px;
 
   background-color: #eee;
-  background-image: -webkit-linear-gradient(top, rgba(255,255,255,0.8), rgba(255,255,255,0));
-  background-image: -moz-linear-gradient(top, rgba(255,255,255,0.8), rgba(255,255,255,0));
-  background-image: linear-gradient(top, rgba(255,255,255,0.8), rgba(255,255,255,0));
+  background-image: -webkit-linear-gradient(to bottom, rgba(255,255,255,0.8), rgba(255,255,255,0));
+  background-image: -moz-linear-gradient(to bottom, rgba(255,255,255,0.8), rgba(255,255,255,0));
+  background-image: linear-gradient(to bottom, rgba(255,255,255,0.8), rgba(255,255,255,0));
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.15);
   box-shadow: 0 1px 2px rgba(0,0,0,0.15);
   color: #333;
   font-weight: 400;
@@ -1012,7 +1011,11 @@ h3 {
   border-color: #207FE5;
 
   background-color: #207FE5;
-  background-image: -webkit-linear-gradient(top, rgba(255,255,255,0.3), rgba(255,255,255,0));
+  background-image: -webkit-linear-gradient(to bottom, rgba(255,255,255,0.3), rgba(255,255,255,0));
+  background-image: -moz-linear-gradient(to bottom, rgba(255,255,255,0.3), rgba(255,255,255,0));
+  background-image: linear-gradient(to bottom, rgba(255,255,255,0.3), rgba(255,255,255,0));
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.3);
   color: #fff;
   text-shadow: 0 -1px 0 #207FE5;
 }
@@ -1079,6 +1082,8 @@ h3 {
   border-top: 1px solid #aaa;
   
   -webkit-transform: rotate(-6deg);
+  -ms-transform: rotate(-6deg);
+  transform: rotate(-6deg);
 }
 
 .about-map {
@@ -1112,7 +1117,6 @@ h3 {
 
   background: #fff;
   -webkit-box-shadow: 5px 0 8px -5px rgba(0,0,0,0.3);
-  -moz-box-shadow: 5px 0 8px -5px rgba(0,0,0,0.3);
   box-shadow: 5px 0 8px -5px rgba(0,0,0,0.3);
   -webkit-transform: rotate(14deg);
   -ms-transform: rotate(14deg);
