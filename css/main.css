@@ -901,6 +901,10 @@ h3 {
   display: none;
 }
 
+.no-js #hero-img {
+  display: none;
+}
+
 .primary-content {
   padding: 40px 0;
 }
