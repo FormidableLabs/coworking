@@ -977,6 +977,9 @@ h3 {
 }
 
 .btn {
+  position: relative;
+
+  display: inline-block;
   height: 48px;
   padding: 0 14px;
   border: 1px solid #bbb;
@@ -991,10 +994,22 @@ h3 {
   color: #333;
   font-weight: 400;
   font-size: 16px;
-  line-height: 40px;
+  line-height: 46px;
+  text-align: center;
+  text-decoration: none;
   text-shadow: 0 -1px 0 rgba(255,255,255,0.8);
   vertical-align: middle;
   -webkit-font-smoothing: antialiased;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:active {
+  top: 1px;
+
+  background-image: none;
 }
 
 .btn-large {
