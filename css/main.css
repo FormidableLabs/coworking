@@ -899,6 +899,7 @@ h3 {
 
 .primary-img {
   display: none;
+  margin: 0;
 }
 
 .no-js #hero-img {
