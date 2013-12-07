@@ -774,6 +774,10 @@ h3 {
   text-transform: uppercase;
 }
 
+a {
+  color: #207FE5;
+}
+
 /* ==========================================================================
    Layout
    ========================================================================== */
@@ -887,6 +891,10 @@ h3 {
   background: #fff;
   font-weight: 300;
   text-align: left;
+}
+
+.alert {
+  border-bottom: 1px solid #dedede;
 }
 
 .section-padded {
@@ -1087,7 +1095,7 @@ h3 {
   z-index: 200;
 
   border-top: 1px solid #aaa;
-  
+
   -webkit-transform: rotate(-6deg);
   -ms-transform: rotate(-6deg);
   transform: rotate(-6deg);
@@ -1136,9 +1144,8 @@ h3 {
 }
 
 /* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
+   Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
-   Modify as content requires.
    ========================================================================== */
 
 @media only screen and (min-width: 31em) {
@@ -1163,6 +1170,11 @@ h3 {
     float: left;
     width: 50%;
     padding-left: 50px;
+  }
+
+  .alert {
+    font-size: 18px;
+    text-align: center;
   }
 }
 
